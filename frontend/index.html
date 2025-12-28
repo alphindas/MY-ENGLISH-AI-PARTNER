@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="app-container">
+        <header>
+            <h1>AI English Partner</h1>
+            <p>Practice speaking naturally</p>
+        </header>
+
+        <main id="chat-window">
+            <div class="welcome-message">
+                <p>Hello! I'm your AI English partner. Click the microphone or type to start chatting!</p>
+            </div>
+            <!-- Messages will be injected here -->
+        </main>
+
+        <div class="controls-area">
+            <div id="correction-display" class="correction-box hidden">
+                <strong>Grammar Tip:</strong> <span id="correction-text"></span>
+            </div>
+
+            <div class="input-group">
+                <button id="mic-btn" class="icon-btn" title="Speak">
+                    🎤
+                </button>
+                <input type="text" id="text-input" placeholder="Type a message..." autocomplete="off">
+                <button id="send-btn" class="icon-btn send-btn" title="Send">
+                    ➤
+                </button>
+            </div>
+            <div id="status-indicator">Ready</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
