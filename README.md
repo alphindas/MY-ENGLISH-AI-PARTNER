@@ -1,34 +1,51 @@
 # AI English Speaking Partner
 
-A beautiful, full-stack web application for practicing English conversation with an AI.
+AI English Speaking Partner is a full-stack web application designed to help users practice spoken English through natural voice and text-based conversations. The application acts as an AI conversation partner that responds intelligently, speaks back to the user, and provides grammar correction to improve fluency and confidence.
 
-## 🚀 How to Run (Quick Way)
+---
 
-**Option 1: Windows Script**
-Double-click or run the `run_app.ps1` file in the main folder.
+## Features
 
-**Option 2: Manual Terminal**
-1.  Open your terminal in the project folder.
-2.  Navigate to backend: `cd backend`
-3.  Start the server:
-    ```powershell
-    python -m uvicorn main:app --reload
-    ```
-4.  Open `http://localhost:8000/` in your browser.
+- Voice-to-text input using browser-based speech recognition  
+- AI-generated conversational responses using Google Gemini  
+- Text-to-speech output for natural interaction  
+- Grammar correction with contextual feedback  
+- Session-based conversation memory for contextual continuity  
+- Clean and modern user interface with smooth animations  
+- Fast and lightweight backend API  
 
-## ✨ Features
-- **Voice Interaction**: Speak naturally to the AI.
-- **Smart Corrections**: Get gentle grammar tips.
-- **Premium Design**: Glassmorphism UI with vibrant animations.
-- **Context Memory**: Remembers what you talked about.
+---
 
-## 🔑 Setup (First Time Only)
-1.  **Install Python Dependencies**:
-    ```powershell
-    cd backend
-    pip install -r requirements.txt
-    ```
-2.  **Set API Key**:
-    - Get a key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-    - Create/Edit `backend/.env`.
-    - Add: `GOOGLE_API_KEY=your_key_here`.
+## Technology Stack
+
+### Frontend
+- HTML5  
+- CSS3 (Glassmorphism design and animations)  
+- Vanilla JavaScript  
+- Web Speech API (Speech Recognition and Speech Synthesis)
+
+### Backend
+- Python 3  
+- FastAPI  
+- Uvicorn  
+- Google Gemini API  
+- python-dotenv  
+
+---
+
+## Application Workflow
+
+1. The user speaks or types a message in English  
+2. The browser converts speech input into text  
+3. The message is sent to the backend via a REST API  
+4. The backend forwards the message and conversation history to the AI model  
+5. The AI returns a structured JSON response containing:
+   - AI reply  
+   - Grammar correction (if applicable)  
+6. The frontend displays the response and reads it aloud  
+
+---
+
+## Project Structure
+
+
